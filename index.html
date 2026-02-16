@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Salame — Próximamente</title>
+  <meta name="description" content="Salame — marketplace C2C. Próximamente en Argentina." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg1:#6B3CCF;
+      --bg2:#3A7BE0;
+      --txt:#ffffff;
+      --muted:rgba(255,255,255,.85);
+      --card:rgba(255,255,255,.10);
+      --stroke:rgba(255,255,255,.18);
+    }
+
+    *{box-sizing:border-box}
+
+    body{
+      margin:0;
+      font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      color:var(--txt);
+      background:
+        radial-gradient(1200px 600px at 20% 20%, rgba(255,255,255,.20), transparent 55%),
+        radial-gradient(900px 500px at 80% 80%, rgba(255,255,255,.12), transparent 60%),
+        linear-gradient(135deg,var(--bg1),var(--bg2));
+      min-height:100vh;
+      display:grid;
+      place-items:center;
+      padding:28px;
+    }
+
+    .card{
+      width:min(860px,100%);
+      border:1px solid var(--stroke);
+      background:var(--card);
+      backdrop-filter: blur(10px);
+      border-radius:26px;
+      padding:40px 32px;
+      box-shadow: 0 20px 60px rgba(0,0,0,.25);
+      text-align:center;
+    }
+
+    .logo{
+      width:110px;
+      height:110px;
+      border-radius:24px;
+      display:grid;
+      place-items:center;
+      margin:0 auto 18px;
+      border:1px solid var(--stroke);
+      background: rgba(0,0,0,.20);
+      overflow:hidden;
+    }
+
+    .logo img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      display:block;
+    }
+
+    .badge{
+      display:inline-flex;
+      gap:8px;
+      align-items:center;
+      padding:8px 14px;
+      border-radius:999px;
+      border:1px solid var(--stroke);
+      background:rgba(0,0,0,.15);
+      font-weight:600;
+      font-size:13px;
+      letter-spacing:.3px;
+      color:var(--muted);
+      margin-bottom:18px;
+    }
+
+    h1{
+      margin:0;
+      font-size:48px;
+      font-weight:800;
+      letter-spacing:-.02em;
+    }
+
+    p{
+      margin:14px auto 0;
+      max-width:560px;
+      color:var(--muted);
+      font-size:18px;
+      line-height:1.6;
+    }
+
+    .cta{
+      margin-top:28px;
+      display:flex;
+      gap:14px;
+      justify-content:center;
+      flex-wrap:wrap;
+    }
+
+    a.btn{
+      text-decoration:none;
+      font-weight:700;
+      padding:14px 22px;
+      border-radius:999px;
+      border:1px solid var(--stroke);
+      background:#ffffff;
+      color:#2b2b2b;
+      transition: transform .08s ease;
+    }
+
+    a.btn.secondary{
+      background:rgba(0,0,0,.25);
+      color:#ffffff;
+    }
+
+    a.btn:active{
+      transform: scale(.98);
+    }
+
+    .foot{
+      margin-top:22px;
+      font-size:12px;
+      color:rgba(255,255,255,.70);
+    }
+  </style>
+</head>
+
+<body>
+  <main class="card">
+
+    <div class="logo">
+      <img src="https://dummyimage.com/192x192/111827/ffffff&text=S" alt="Salame">
+    </div>
+
+    <div class="badge">🚀 Próximamente en Argentina</div>
+
+    <h1>Salame</h1>
+
+    <p>
+      La forma más simple y segura de comprar y vender en tu zona.
+    </p>
+
+    <div class="cta">
+      <a class="btn" href="https://instagram.com/salameapp" target="_blank">Seguinos en Instagram</a>
+      <a class="btn secondary" href="mailto:hola@salame.com.ar">Contacto</a>
+    </div>
+
+    <div class="foot">
+      © 2026 Salame. Todos los derechos reservados.
+    </div>
+
+  </main>
+</body>
+</html>
