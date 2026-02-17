@@ -1,80 +1,83 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Salame</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Salame</title>
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    body, html {
-      height: 100%;
-      font-family: Arial, sans-serif;
-    }
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
 
-    .background {
-      position: relative;
-      width: 100%;
-      height: 100vh;
-      background: url("TU_IMAGEN_AQUI.jpg") no-repeat center center;
-      background-size: cover;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+/* Imagen ocupa TODA la pantalla */
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url("fondo.jpg") no-repeat center center;
+  background-size: cover; /* CLAVE */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-    .content {
-      text-align: center;
-      transform: scale(0.85); /* Hace todo un poco más pequeño */
-    }
+/* Contenido centrado */
+.content {
+  text-align: center;
+}
 
-    .logo {
-      width: 220px; /* Más pequeño */
-      margin-bottom: 40px;
-    }
+/* Logo más pequeño */
+.logo {
+  width: 180px;
+  margin-bottom: 40px;
+  filter: drop-shadow(0px 10px 20px rgba(0,0,0,0.25));
+}
 
-    .texto {
-      font-size: 32px;
-      font-style: italic;
-      color: #111;
-    }
+/* Texto principal */
+.texto {
+  font-size: 34px;
+  font-style: italic;
+  color: #111;
+}
 
-    .subtexto {
-      margin-top: 20px;
-      font-size: 20px;
-      font-style: italic;
-      color: #333;
-    }
+/* Subtexto */
+.subtexto {
+  margin-top: 15px;
+  font-size: 18px;
+  font-style: italic;
+  color: #333;
+}
 
-    @media (max-width: 768px) {
-      .logo {
-        width: 160px;
-      }
-      .texto {
-        font-size: 24px;
-      }
-      .subtexto {
-        font-size: 16px;
-      }
-    }
+@media (max-width: 768px) {
+  .logo { width: 140px; }
+  .texto { font-size: 24px; }
+  .subtexto { font-size: 16px; }
+}
 
-  </style>
+</style>
 </head>
 
 <body>
 
-  <div class="background">
-    <div class="content">
-      <img src="logo.png" alt="Salame Logo" class="logo">
-      <div class="texto">Argentina, llegamos pronto..</div>
-      <div class="subtexto">No sean...</div>
-    </div>
+<div class="background">
+  <div class="content">
+    <img src="logo.png" class="logo" alt="Salame">
+    <div class="texto">Argentina, llegamos pronto..</div>
+    <div class="subtexto">No sean...</div>
   </div>
+</div>
 
 </body>
 </html>
