@@ -1,45 +1,29 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Salame</title>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Salame</title>
 
-    <style>
-      html, body {
-        margin: 0;
-        padding: 0;
-        height: 100%;
-        background: #000;
-        overflow: hidden;
-      }
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
 
-      /* contenedor full screen */
-      .screen {
-        position: fixed;
-        inset: 0;
-        width: 100vw;
-        height: 100vh;
-      }
+  html, body {
+    height: 100%;
+    width: 100%;
+  }
 
-      /* la imagen ocupa toda la pantalla */
-      .screen img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;     /* llena y recorta si hace falta */
-        object-position: center;
-        display: block;
-      }
-    </style>
-  </head>
+  body {
+    background: url("bg3.png") no-repeat center center fixed;
+    background-size: cover;
+  }
+</style>
+</head>
 
-  <body>
-    <div class="screen">
-      <img
-        src="IMAGE_URL"
-        alt="bg3"
-        onerror="document.body.style.background='#111'; alert('No carga la imagen. Usa URL RAW de GitHub.');"
-      />
-    </div>
-  </body>
+<body>
+</body>
 </html>
