@@ -4,26 +4,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Salame</title>
+
     <style>
       html, body {
-        height: 100%;
         margin: 0;
+        padding: 0;
+        height: 100%;
+        background: #000;
+        overflow: hidden;
       }
 
-      .bg-full {
-        height: 100vh;
+      /* contenedor full screen */
+      .screen {
+        position: fixed;
+        inset: 0;
         width: 100vw;
+        height: 100vh;
+      }
 
-        /* bg3 desde GitHub (RAW) */
-        background-image: url("PON_AQUI_TU_URL_RAW_DE_GITHUB/bg3.png");
-        background-size: cover;      /* llena la pantalla */
-        background-position: center; /* centrada */
-        background-repeat: no-repeat;
+      /* la imagen ocupa toda la pantalla */
+      .screen img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;     /* llena y recorta si hace falta */
+        object-position: center;
+        display: block;
       }
     </style>
   </head>
 
   <body>
-    <div class="bg-full"></div>
+    <div class="screen">
+      <img
+        src="IMAGE_URL"
+        alt="bg3"
+        onerror="document.body.style.background='#111'; alert('No carga la imagen. Usa URL RAW de GitHub.');"
+      />
+    </div>
   </body>
 </html>
