@@ -10,18 +10,23 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
+  background-color: black; /* Fondo negro */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-body {
-  background-image: url('bg.png'); /* <-- CAMBIA SI TU IMAGEN TIENE OTRO NOMBRE */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+img {
+  max-width: 80%;  /* Ajusta este valor para hacerla más pequeña */
+  max-height: 80vh;
+  object-fit: contain;
 }
 </style>
 
 </head>
 <body>
+
+<img src="bg.png" alt="Salame">
+
 </body>
 </html>
