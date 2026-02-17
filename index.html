@@ -1,32 +1,80 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Salame</title>
+  <meta charset="UTF-8">
+  <title>Salame</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<style>
-html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  background-color: black; /* Marco negro */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-img {
-  width: 95vw;          /* Casi todo el ancho de pantalla */
-  height: 95vh;         /* Casi todo el alto */
-  object-fit: contain;  /* Mantiene proporción */
-}
-</style>
+    body, html {
+      height: 100%;
+      font-family: Arial, sans-serif;
+    }
 
+    .background {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      background: url("TU_IMAGEN_AQUI.jpg") no-repeat center center;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .content {
+      text-align: center;
+      transform: scale(0.85); /* Hace todo un poco más pequeño */
+    }
+
+    .logo {
+      width: 220px; /* Más pequeño */
+      margin-bottom: 40px;
+    }
+
+    .texto {
+      font-size: 32px;
+      font-style: italic;
+      color: #111;
+    }
+
+    .subtexto {
+      margin-top: 20px;
+      font-size: 20px;
+      font-style: italic;
+      color: #333;
+    }
+
+    @media (max-width: 768px) {
+      .logo {
+        width: 160px;
+      }
+      .texto {
+        font-size: 24px;
+      }
+      .subtexto {
+        font-size: 16px;
+      }
+    }
+
+  </style>
 </head>
+
 <body>
 
-<img src="bg.png" alt="Salame">
+  <div class="background">
+    <div class="content">
+      <img src="logo.png" alt="Salame Logo" class="logo">
+      <div class="texto">Argentina, llegamos pronto..</div>
+      <div class="subtexto">No sean...</div>
+    </div>
+  </div>
 
 </body>
 </html>
